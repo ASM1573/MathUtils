@@ -1,14 +1,8 @@
-public class math_utils {
-    public static int add(int a, int b) {
-        return a + b;
+public class MathUtils {
+	public static int add(int... numbers) {
+    int sum = 0;
+    for (int num : numbers) {
+        sum += num;
     }
-    public static int subtract(int a, int b) {
-        return a - b; // Falso error
-     }
-	
-	public static int multiply(int a, int b) {
-    		return a * b;
-	}
-
-
+    return sum;
 }
