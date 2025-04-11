@@ -6,3 +6,7 @@ public class MathUtils {
     }
     return sum;
 }
+public static double divide(int a, int b) {
+    if (b == 0) throw new IllegalArgumentException("División por cero no permitida");
+    return (double) a / b;
+}
